@@ -1,0 +1,14 @@
+#browser "chromium %u"
+
+# testing open in something else
+browser "echo %u > /tmp/nbcache.db && sh ~/scripts/send_to_pocket.sh"
+
+# proper vi/vim nav
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
